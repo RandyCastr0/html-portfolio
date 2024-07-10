@@ -1,0 +1,146 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background: linear-gradient(to top right, #000,#333);
+  }
+  
+  /* Header styles */
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    color: #d71717;
+  }
+  
+  nav video {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 154px;
+  }
+
+  /* Main content styles */
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+  }
+  
+.about-me-container{
+  display: flex;
+}
+
+  main h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .name{
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  animation: glow 2s infinite;
+  font-size: 80px;
+  }
+
+  .headshot{
+    display: contents;
+    width: 50px;
+    height: 50px;
+  }
+
+  .headshot-pic{
+    height: 550px;
+    width: 550px;
+  }
+
+  /* My work*/
+
+  .my-work-container{
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(3, 209px);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+  
+  }
+
+  /* Contact me*/
+
+.contact-me-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 250px;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
+
+  
+  /* Footer styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+  }
+  
+  footer p {
+    margin: 0;
+  }
