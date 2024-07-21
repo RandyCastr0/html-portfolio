@@ -13,6 +13,25 @@
     background: linear-gradient(to top right, #000,#333);
   }
   
+.hidden {
+opacity: 0;
+filter: blur();
+transform: translateX(-100%);
+transition: all 1s;
+}
+
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX(0);
+
+}
+
+section{
+  display: grid;
+  
+}
+
   /* Header styles */
   
   header {
@@ -62,7 +81,11 @@
   
 .about-me-container{
   display: flex;
+  align-items: center;
+  margin: 30px;
+  height: 40rem;
 }
+
 
   main h1 {
     font-size: 24px;
@@ -81,6 +104,14 @@
     }
   }
 
+h1 .name{
+  display: flex;
+}
+
+p {
+  display: flex;
+}
+
   .name{
     display: flex;
     justify-content: center;
@@ -90,7 +121,9 @@
   }
 
   .headshot{
-    display: contents;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 50px;
     height: 50px;
   }
