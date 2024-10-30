@@ -166,6 +166,13 @@ p {
   }
 
   /* Technologies*/
+
+.tech-stack-header{
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -173,7 +180,6 @@ p {
   to {
     transform: translateX(-100%);
   }
-  
 }
 
   .logos{
@@ -195,13 +201,13 @@ z-index: 2;
 
 .logo-slide{
  display: inline-block; 
-  animation: slide 35s infinite linear;
+  animation: slide 25s infinite linear;
   
 }
 
   .logo-slide img{
-    height: 50px;
-    margin: 0 40px;
+    height: 80px;
+    margin: 0 60px;
   }
 
 .logos:before{
