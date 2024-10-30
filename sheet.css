@@ -165,6 +165,60 @@ p {
     transform: scale(1.05, 1.05);
   }
 
+  /* Technologies*/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+  
+}
+
+  .logos{
+    overflow: hidden;
+    padding: 60px 0;
+    background: grey;
+    white-space: nowrap;   
+    position: relative;
+  }
+.logos:before,
+.logos::after{
+  position: absolute;
+  top: 0;
+  width: 250px;
+height: 100%;
+content: "";
+z-index: 2;
+}
+
+.logo-slide{
+ display: inline-block; 
+  animation: slide 35s infinite linear;
+  
+}
+
+  .logo-slide img{
+    height: 50px;
+    margin: 0 40px;
+  }
+
+.logos:before{
+  left: 0;
+background: linear-gradient(to left, rgba(255,255,255,0), black);
+}
+
+.logos:after{
+  right: 0;
+background: linear-gradient(to right , rgba(255,255,255,0), black);
+}
+
+  .logos:hover .logo-slide{
+    animation-play-state: paused;
+  }
+
+
   /* Contact me*/
 
 .contact-me-container{
@@ -172,6 +226,12 @@ p {
   flex-direction: row;
   justify-content: center;
   height: 20rem;
+}
+
+.contact-header{
+display: flex;
+justify-content: center;
+font-size: x-large;
 }
 
 .contacts{
